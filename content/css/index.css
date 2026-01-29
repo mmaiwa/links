@@ -8,13 +8,33 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+#kagamihiiragi {
+    position: fixed;
+    left: 40px;
+    bottom: 0;
+    max-height: 200px;
+}
+
+#kagamihiiragi2 {
+    position: fixed;
+    right: 40px;
+    top: 0;
+    max-height: 200px;
+    rotate: 180deg;
+}
+
 body {
     display: flex;
     flex-direction: column;
     text-align: center;
     color: var(--text-color);
-    background-color: rgb(37, 47, 66);
+    background-color: rgb(255, 255, 255);
     min-height: 100vh;
+    background-image: url('../media/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .header-heart:is(i) {
@@ -37,12 +57,12 @@ header {
     gap: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: black;
+    background-color: rgba(255, 255, 255, 0);
 }
 
 footer {
     padding: 20px;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
 }
 
 main {
@@ -62,6 +82,11 @@ a {
 
 section>table{
     margin: auto;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
 }
 
 tr>th:first-child,
